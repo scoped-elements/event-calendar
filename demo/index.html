@@ -38,12 +38,7 @@
       ];
       render(
         html`
-          <event-calendar
-            .events=${events}
-            @date-clicked=${e => alert(e.detail.date)}
-          >
-            some light-dom
-          </event-calendar>
+          <event-calendar .events=${events}> some light-dom </event-calendar>
         `,
         document.querySelector('#demo')
       );

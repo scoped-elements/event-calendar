@@ -3,7 +3,7 @@
   "description": "Webcomponent event-calendar following open-wc recommendations",
   "license": "MIT",
   "author": "guillem.cordoba@gmail.com",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": {
@@ -23,15 +23,16 @@
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
-    "@event-calendar/core": "^0.11.1",
-    "@event-calendar/day-grid": "^0.11.1",
-    "@event-calendar/interaction": "^0.11.1",
-    "@event-calendar/list": "^0.11.1",
-    "@event-calendar/resource-time-grid": "^0.11.1",
-    "@event-calendar/time-grid": "^0.11.1",
+    "@event-calendar/core": "^1.3.1",
+    "@event-calendar/day-grid": "^1.3.1",
+    "@event-calendar/interaction": "^1.3.1",
+    "@event-calendar/list": "^1.3.1",
+    "@event-calendar/resource-time-grid": "^1.3.1",
+    "@event-calendar/time-grid": "^1.3.1",
     "@open-wc/eslint-config": "^4.3.0",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-typescript": "^8.3.3",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -54,18 +55,11 @@
   "customElements": "custom-elements.json",
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
-    "extends": [
-      "@open-wc",
-      "prettier"
-    ],
-    "plugins": [
-      "@typescript-eslint"
-    ],
+    "extends": ["@open-wc", "prettier"],
+    "plugins": ["@typescript-eslint"],
     "rules": {
       "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "error"
-      ],
+      "@typescript-eslint/no-unused-vars": ["error"],
       "import/no-extraneous-dependencies": "off",
       "import/no-unresolved": "off",
       "import/extensions": "off"
@@ -81,9 +75,6 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.ts": ["eslint --fix", "prettier --write"]
   }
 }
