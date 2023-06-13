@@ -3,12 +3,11 @@
   "description": "Webcomponent event-calendar following open-wc recommendations",
   "license": "MIT",
   "author": "guillem.cordoba@gmail.com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./event-calendar": "./dist/definitions/event-calendar.js"
+    ".": "./dist/index.js"
   },
   "scripts": {
     "analyze": "cem analyze --litelement",
@@ -23,12 +22,12 @@
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
-    "@event-calendar/core": "^1.3.1",
-    "@event-calendar/day-grid": "^1.3.1",
-    "@event-calendar/interaction": "^1.3.1",
-    "@event-calendar/list": "^1.3.1",
-    "@event-calendar/resource-time-grid": "^1.3.1",
-    "@event-calendar/time-grid": "^1.3.1",
+    "@event-calendar/core": "^1.4.0",
+    "@event-calendar/day-grid": "^1.4.0",
+    "@event-calendar/interaction": "^1.4.0",
+    "@event-calendar/list": "^1.4.0",
+    "@event-calendar/resource-time-grid": "^1.4.0",
+    "@event-calendar/time-grid": "^1.4.0",
     "@open-wc/eslint-config": "^4.3.0",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",

@@ -15,9 +15,10 @@ import DayGrid from '@event-calendar/day-grid';
 import styles from '@event-calendar/core/index.css';
 
 import { html, LitElement, PropertyValues } from 'lit';
-import { property, query } from 'lit/decorators.js';
+import { customElement, property, query } from 'lit/decorators.js';
 import { Event } from '../types';
 
+@customElement('event-calendar')
 export class EventCalendar extends LitElement {
   @property({ type: Object })
   events: Array<Event> = [];
